@@ -1,0 +1,64 @@
+npm install --save-dev react-test-renderer
+
+
+Theory: 
+Test components wrapped in a provider. 
+Static analysis on testing. 
+
+
+JEST VS REACT TESTING LIBRARY (RTL)
+JEST--> JS Testing framework 
+        Test runner 
+        once the test done, determines the tests passed or failed reports it back in a human readable manner. 
+
+RTL --> RTL provides a virual DOM which we can use to interact with and verify the behaviour of react component. 
+
+
+Types of Test: 
+Unit test 
+Integration test 
+End to End Tests (e2e)
+
+
+UNIT TEST CASES: 
+-->Focus is on testing indvidual building blocks of an app such as a class or function or a component. 
+-->Each building block is tested on isolation, independent of other units. 
+-->Run in a short amount of time and make it very easy to pinpoint failure.
+
+<--------------------Anatomy of the test -----------------------> 
+
+function signautres
+test(name, fn, timeout)
+name: to test name used to identify the test. 
+fn: function that containes the expections to test .
+timeout: which is optional argument for specifying how long to wait before
+aborting the test. The default timeout value is 5 secs. 
+
+
+Explain: 
+import screen and screen.getByText
+
+screen: its from react testing library
+1) its an object that containes methods to query the virtual dom.
+
+getByText: 
+Its a query and by get by text accepts a string or irregular
+expression as its argument. 
+
+<------------ Test driven development ------------------->
+three phasees: 
+1_ Create tests that verify the functionality of a specific feaute.
+2_Write software code that will run the tests successfully when re-executed.
+3_Refactor the code for optimization while ensuring the tests continue to pass. 
+
+Alos called red-green testing as all tests go from a red failed state to a green passed state. 
+
+
+<------------------Watch Mode-------------------------->
+This is an option that we can pass th Jest asking to watch files that have chaged since the last 
+commit and execute tests related only to those changed files. 
+
+
+.
+
+
